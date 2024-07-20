@@ -29,6 +29,9 @@ module.exports = {
         "MorrabaLight" : "Morabba Light",
         "MorrabaMedium" : "Morraba Medium",
         "MorrabaBold" : "Morraba Bold",
+      },
+      letterSpacing: {
+        "tightest": "-0.065em"
       }
     },
   },
