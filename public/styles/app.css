@@ -617,6 +617,14 @@ body {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -656,6 +664,10 @@ body {
 
 .h-8 {
   height: 2rem;
+}
+
+.w-52 {
+  width: 13rem;
 }
 
 .w-8 {
@@ -712,8 +724,27 @@ body {
        column-gap: 2.25rem;
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.border-t-\[3px\] {
+  border-top-width: 3px;
+}
+
+.border-t-orange-300 {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(253 186 116 / var(--tw-border-opacity));
 }
 
 .bg-black\/50 {
@@ -725,8 +756,17 @@ body {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-white\/20 {
   background-color: rgb(255 255 255 / 0.2);
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-10 {
@@ -747,9 +787,18 @@ body {
   font-family: Dana Medium;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.tracking-normal {
+  letter-spacing: 0em;
 }
 
 .tracking-tightest {
@@ -766,13 +815,32 @@ body {
   color: rgb(254 215 170 / var(--tw-text-opacity));
 }
 
+.text-zinc-700 {
+  --tw-text-opacity: 1;
+  color: rgb(63 63 70 / var(--tw-text-opacity));
+}
+
 .backdrop-blur-\[6px\] {
   --tw-backdrop-blur: blur(6px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.child\:block > * {
+  display: block;
+}
+
+.dark\:bg-zinc-700:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
 .dark\:bg-zinc-800:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.dark\:text-white:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
