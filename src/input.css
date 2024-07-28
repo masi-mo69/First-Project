@@ -32,13 +32,7 @@
         font-family: "Morraba Bold";
         src: local("Morraba Bold"),url("../fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
         font-display: swap;
-    }
-
-    body {
-        background-image: url("../images/headerBgDesktop.webp");
-        background-repeat: no-repeat;
-    }
-    
+    }   
 
 }
 
@@ -72,5 +66,65 @@
     }
     .overlay--visible{
         @apply visible opacity-100;
+    }
+
+
+
+    .circle{
+        @apply flex justify-center items-center border rounded-full;
+    }
+    .circle--main{
+        @apply absolute bottom-0 right-0 left-0 mx-auto translate-y-2/4 hidden md:flex;
+    }
+    .circle--lg{
+        @apply w-[203px] h-[203px] border-white/25; 
+    }
+    .circle--md{
+        @apply w-[145px] h-[145px] border-white/25; 
+    }
+    .circle--sm{
+        @apply w-[95px] h-[95px] border-white/25; 
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        html.dark .products{
+            background-image: url("../images/products-bg.png");
+        }
+        .products{
+            background: linear-gradient(rgba(243, 244, 246, 0.65) , rgba(243, 244, 246, 0.65)) url("../images/products-bg.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        } 
+    }
+
+    .section-title{
+        @apply text-2xl md:text-5xl font-MorrabaMedium text-zinc-700 dark:text-white;
+    }
+    .section-subtitle{
+        @apply inline-block text-lg md:text-3xl font-MorrabaLight mt-0.5 md:mt-1.5 text-zinc-700 dark:text-white;
+    }
+    .section-link{
+        @apply flex items-center md:gap-x-1 h-10 pr-3 pl-1 text-base md:text-xl tracking-tightest text-orange-300 md:hover:bg-orange-300/20 rounded-md transition-colors;
+    }
+
+    .offer{
+        @apply relative text-gray-400;
+    }
+    .offer::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        background-color: #EF4444;
+        top: -2px;
+    }
+}
+
+@layer utilities{
+    .flex-center{
+        @apply flex items-center justify-center;
     }
 }
