@@ -44,7 +44,7 @@
 
 
 @layer components{
-    .sunmenu{
+    .submenu{
         @apply hidden flex flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
     }
     .submenu--open{
@@ -65,5 +65,12 @@
         top: 0;
         bottom: 0;
         margin: auto;
+    }
+
+    .overlay{
+        @apply md:hidden invisible opacity-0 fixed inset-0 w-full h-full bg-black/40 z-10 transition-all;
+    }
+    .overlay--visible{
+        @apply visible opacity-100;
     }
 }

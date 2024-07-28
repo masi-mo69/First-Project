@@ -35,6 +35,10 @@ module.exports = {
       },
       spacing: {
         "30" : "7.5rem"
+      },
+      backgroundImage: {
+        "home-mobile" : "url(../images/headerBgMobile.webp)",
+        "home-desktop": "url(../images/headerBgDesktop.webp)"
       }
     },
   },
