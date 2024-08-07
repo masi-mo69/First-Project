@@ -133,6 +133,10 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom{
+        @apply flex-center w-9 h-9 md:w-10 md:h-10 bg-white text-zinc-700 dark:bg-zinc-700 dark:text-white shadow-normal rounded-full transition-all hover:bg-gray-300 dark:hover:bg-white dark:hover:text-gray-700;
+    }
 }
 
 @layer utilities{
