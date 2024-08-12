@@ -1121,6 +1121,10 @@ html.dark .services::after,
   margin-left: 12px;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -1196,12 +1200,24 @@ html.dark .services::after,
   height: 2.75rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-14 {
   height: 3.5rem;
 }
 
 .h-16 {
   height: 4rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-2\.5 {
+  height: 0.625rem;
 }
 
 .h-24 {
@@ -1302,6 +1318,10 @@ html.dark .services::after,
 
 .w-2 {
   width: 0.5rem;
+}
+
+.w-2\.5 {
+  width: 0.625rem;
 }
 
 .w-25 {
@@ -1424,16 +1444,16 @@ html.dark .services::after,
   max-width: 201px;
 }
 
-.max-w-\[606px\] {
-  max-width: 606px;
-}
-
 .shrink {
   flex-shrink: 1;
 }
 
 .shrink-0 {
   flex-shrink: 0;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .-translate-y-2\/4 {
@@ -1517,6 +1537,10 @@ html.dark .services::after,
 
 .gap-3\.5 {
   gap: 0.875rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-5 {
@@ -1701,9 +1725,22 @@ html.dark .services::after,
   border-top-width: 3px;
 }
 
+.border-orange-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 215 170 / var(--tw-border-opacity));
+}
+
 .border-orange-300 {
   --tw-border-opacity: 1;
   border-color: rgb(253 186 116 / var(--tw-border-opacity));
+}
+
+.border-white\/10 {
+  border-color: rgb(255 255 255 / 0.1);
+}
+
+.border-white\/20 {
+  border-color: rgb(255 255 255 / 0.2);
 }
 
 .border-b-gray-100 {
@@ -1724,6 +1761,10 @@ html.dark .services::after,
 .border-t-orange-300 {
   --tw-border-opacity: 1;
   border-top-color: rgb(253 186 116 / var(--tw-border-opacity));
+}
+
+.border-t-white\/10 {
+  border-top-color: rgb(255 255 255 / 0.1);
 }
 
 .bg-\[center-top\] {
@@ -1773,6 +1814,10 @@ html.dark .services::after,
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
 .bg-home-mobile {
@@ -1929,6 +1974,10 @@ html.dark .services::after,
   padding-right: 1.75rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -2015,6 +2064,11 @@ html.dark .services::after,
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xs\/5 {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
 }
 
 .text-xs\/\[24px\] {
@@ -2383,6 +2437,10 @@ html.dark .services::after,
     height: auto;
   }
 
+  .sm\:w-\[94\%\] {
+    width: 94%;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
@@ -2466,6 +2524,10 @@ html.dark .services::after,
 
   .md\:mb-7 {
     margin-bottom: 1.75rem;
+  }
+
+  .md\:mt-11 {
+    margin-top: 2.75rem;
   }
 
   .md\:mt-2 {
@@ -2701,6 +2763,10 @@ html.dark .services::after,
     padding-right: 3rem;
   }
 
+  .md\:pt-11 {
+    padding-top: 2.75rem;
+  }
+
   .md\:pt-24 {
     padding-top: 6rem;
   }
@@ -2750,6 +2816,11 @@ html.dark .services::after,
   .md\:text-6xl\/\[62px\] {
     font-size: 3.75rem;
     line-height: 62px;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:text-base\/\[34px\] {
@@ -2900,6 +2971,10 @@ html.dark .services::after,
 
   .xl\:w-\[110px\] {
     width: 110px;
+  }
+
+  .xl\:max-w-\[686px\] {
+    max-width: 686px;
   }
 
   .xl\:gap-x-10 {
